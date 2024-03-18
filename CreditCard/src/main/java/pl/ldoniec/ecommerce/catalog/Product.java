@@ -7,6 +7,7 @@ public class Product {
     private final String id;
     private final String name;
     private final String description;
+    private BigDecimal price;
 
     public Product(UUID id, String name, String description) {
         this.id = id.toString();
@@ -19,11 +20,11 @@ public class Product {
 
     }
 
-    public String getPrice() {
-        return null;
+    public BigDecimal getPrice() {
+        return price;
     }
 
     public void changePrice(BigDecimal newPrice) {
-        return newPrice;
+        this.price = newPrice;
     }
 }
