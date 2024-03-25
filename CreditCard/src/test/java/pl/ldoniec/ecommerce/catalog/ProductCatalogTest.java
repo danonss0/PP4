@@ -1,10 +1,13 @@
 package pl.ldoniec.ecommerce.catalog;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import pl.ldoniec.ecommerce.Product;
+import pl.ldoniec.ecommerce.ProductCatalog;
 
 import java.math.BigDecimal;
 import java.util.List;
-import static org.junit.jupiter.api.Assertions.*;
+
 import static org.assertj.core.api.Assertions.*;
 
 
@@ -25,7 +28,7 @@ public class ProductCatalogTest {
 
         List<Product> products = catalog.allProducts();
 
-        assertThat(products)
+        Assertions.assertThat(products)
                 .hasSize(1);
     }
 
