@@ -6,6 +6,7 @@ import java.util.List;
 public class HasMapProductStorage implements ProductStorage {
     HashMap<String,Product> products;
     public HasMapProductStorage(){
+
         products = new HashMap<>();
     }
 
